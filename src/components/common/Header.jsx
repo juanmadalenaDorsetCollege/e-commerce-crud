@@ -29,7 +29,7 @@ const Header = () => {
                         </button>
                     }
                     {
-                        <div className="h-10 w-10 rounded-full  bg-slate-500 flex justify-center items-center cursor-pointer hover:bg-red-700" onClick={logout}>
+                        <div className="h-10 w-10 rounded-full  bg-slate-500 flex justify-center items-center cursor-pointer hover:bg-red-700">
                             <p className='font-medium text-white'>
                                 JM
                             </p>
