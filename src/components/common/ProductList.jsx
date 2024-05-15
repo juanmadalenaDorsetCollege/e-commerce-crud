@@ -23,6 +23,12 @@ const ProductList = () => {
         </div>
     )
 
+    if(products?.length === 0) return (
+        <div className='pt-24 px-8 min-h-screen'>
+            <h1 className='text-3xl font-semibold text-center'>No products found</h1>
+        </div>
+    )
+    
     return (
         <div className='pt-24 px-8 min-h-screen'>
             <h1 className='text-3xl font-semibold text-center'>Loading...</h1>

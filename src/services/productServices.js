@@ -3,8 +3,14 @@ import productsApi from "../api/productsApi"
 export class productServices {
 
     static async getProducts() {
-        const { data } = await productsApi.get('/products')
-        return data
+        try{
+            const { data } = await productsApi.get('/products')
+            if(typeof data !== 'object')
+            return data
+        }
+        catch(e){
+            return []
+        }
     }
 
     static async getProduct(id) {
