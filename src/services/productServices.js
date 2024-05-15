@@ -5,7 +5,7 @@ export class productServices {
     static async getProducts() {
         try{
             const { data } = await productsApi.get('/products')
-            if(typeof data !== 'object')
+            if(typeof data !== 'object') return []
             return data
         }
         catch(e){
